@@ -70,3 +70,11 @@ function printGoals( ...scorers){
 printGoals('Davies', 'Muller', 'Lewandowski' ,'Kimmich')
 printGoals(...game['scored'])
 // console.log()
+
+
+//The team with more chance of winning is
+const a=Object.keys( game.odds )
+const b=Object.values(game.odds)
+const min=Math.min.apply(null,b)
+const index=(b.indexOf(min))
+console.log('The team with more chances of winning is',game[a[index]])
